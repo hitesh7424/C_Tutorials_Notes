@@ -1,0 +1,122 @@
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	// "#include":{
+	// 	"prefix": "include",
+	// 	"body": "#include <$1>",
+	// 	"description": "Include"
+	// },
+	"Bare minimum C program": {
+		"prefix": "main",
+		"body": [
+			"#include <stdio.h>",
+			"#include <string.h>",
+			"#include <stdlib.h>",
+			"",
+			"int main(int argc, char const *argv[])",
+			"{",
+			"\t$0",
+			"\t",
+			"\treturn 0;",
+			"}",
+		],
+		"description": "C program"
+	},
+	"myprintf": {
+		"prefix": "printf",
+		"body": "printf(\"$1%${2:d}\\n\", $0);",
+		"description": "my printf"
+	},
+	"my scanf": {
+		"prefix": "scanf",
+		"body": "scanf(\"%$1\", &$0);",
+		"description": "my scanf"
+	},
+	"comments": {
+		"prefix": "///",
+		"body": [
+			"/* ",
+			"",
+			"$0",
+			"",
+			"*/\n"
+		],
+		"description": "Multiline comment"
+	},
+	"case": {
+		"prefix": "case",
+		"body": [
+			"case ${1:/* constant-expression */}:",
+			"\t${1:/* code */}",
+			"\t",
+			"\tbreak;\n%0"
+		],
+		"description": "case"
+	},
+	"comment": {
+		"prefix": "//",
+		"body": "/* $0 */",
+		"description": "single comment"
+	},
+	"include": {
+		"prefix": "#include",
+		"body": "#include ${0:filename}",
+		"description": "single comment"
+	},
+	"string reverse": {
+		"prefix": "mystrrev()",
+		"body": [
+			"#include <string.h>\n",
+			"char *mystrrev(char *str)",
+			"{",
+			"   int str_len = strlen(str);",
+			"   char a, b, c;",
+			"   for (int i = 0; i < (str_len) / 2; i++)",
+			"   {",
+			"       a = str[i];",
+			"       str[i] = str[str_len - 1 - i];",
+			"       str[str_len - 1 - i] = a;",
+			"   }",
+			"   str[str_len] = '\\0';",
+			"   return str;",
+			"}",
+		],
+		"description": "String function for reversing string"
+	},
+	"my fscanf": {
+		"prefix": "fscanf()",
+		"body": "fscanf(${1:ptr}, \"%${2:s}\", ${3:string});",
+		"description": "fscanf(ptr, \"%s\", string);"
+	},
+	"my fprintf": {
+		"prefix": "fprintf()",
+		"body": "fprintf(${1:ptr}, \"%${2:s}\", ${3:string});",
+		"description": "fprintf(ptr, \"%s\", string);"
+	},
+	"my fopen": {
+		"prefix": "fopen()",
+		"body": "fopen(\"${1:FileName}\", \"${2:Mode}\");",
+		"description": "fopen(\"FileName\", \"Mode\");"
+	},
+	"my fclose": {
+		"prefix": "fclose()",
+		"body": "fclose(${0:ptr});",
+		"description": "fclose(ptr);"
+	},
+	"my fgets": {
+		"prefix": "fgets()",
+		"body": "fgets(${1:*string}, ${2:char_limit}, ${0:stdin});",
+		"description": "fgets(*str, char_limit, stdin);"
+	}
+}
