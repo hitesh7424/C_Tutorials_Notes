@@ -78,7 +78,7 @@ Index of my C Learning -->
 |   Ctut069_sol012_sol.c    |=>  |EXERCISE 12 SOLUTION                       |
 |   Ctut070_exe013.c        |=>  |EXERCISE 13                                |
 |   Ctut071_exe013_sol.c    |=>  |EXERCISE 13 SOLUTION                       |
-|   Ctut072.c               |=>  |                                           |
+|   Ctut072.c               |=>  |FUNCTION POINTERS IN C                     |
 |   Ctut073.c               |=>  |                                           |
 |   Ctut074.c               |=>  |                                           |
 |   Ctut075.c               |=>  |                                           |
