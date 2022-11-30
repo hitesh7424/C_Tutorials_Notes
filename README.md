@@ -79,10 +79,10 @@ Index of my C Learning -->
 |   Ctut070_exe013.c        |=>  |EXERCISE 13                                |
 |   Ctut071_exe013_sol.c    |=>  |EXERCISE 13 SOLUTION                       |
 |   Ctut072.c               |=>  |FUNCTION POINTERS IN C                     |
-|   Ctut073.c               |=>  |                                           |
-|   Ctut074.c               |=>  |                                           |
-|   Ctut075.c               |=>  |                                           |
-|   Ctut076.c               |=>  |                                           |
+|   Ctut073.c               |=>  |CALLBACK FUNCTIONS USING FUNCTION POINTERS |
+|   Ctut074.c               |=>  |EXERCISE 014                               |
+|   Ctut075.c               |=>  |MEMORY LEAK IN C                           |
+|   Ctut076.c               |=>  |EXERCISE 014 SOLUTION                      |
 
 
 multipurpose single header file for C++ :#include<bits/stdc++.h>
